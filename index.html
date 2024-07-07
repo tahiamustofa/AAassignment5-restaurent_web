@@ -14,7 +14,7 @@
 
 <body>
 
-    <header>
+    <header class="mt-0">
 
         <!-- component -->
         <section class="bg-center bg-no-repeat bg-[url('./img/05-Restrurent.png')]">
@@ -26,7 +26,7 @@
                     <div class="relative">
                         <!-- For md screen size -->
                         <div id="md-searchbar"
-                            class="bg-transparent hidden lg:hidden py-5 px-6 items-center justify-between">
+                            class="bg-transparent hidden lg:hidden py-5 px-6 items-center justify-between relative">
                             <div class="flex items-center space-x-3 text-gray-800 dark:text-white">
                                 <div>
                                     <svg class="fill-stroke" width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -41,7 +41,106 @@
                                 </div>
                                
                             </div>
-                            <div class="space-x-6">
+
+                            <div class="md-screen space-x-6 absolute top-32 right-0">
+                                 <div class="mt-6 p-4">
+                                <ul class="flex flex-col space-y-6">
+                                    <li>
+                                        <a href="javascript:void(0)"
+                                        class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                            Home
+                                            <div>
+                                                <svg class="fill-stroke text-white" width="12"
+                                                    height="12" viewBox="0 0 12 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
+                                                        stroke-width="0.75" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"
+                                        class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800"    
+                                        >
+                                            About
+                                            <div>
+                                                <svg class="fill-stroke text-black dark:text-white" width="12"
+                                                    height="12" viewBox="0 0 12 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
+                                                        stroke-width="0.75" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"
+                                        class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                            Igredients
+                                            <div>
+                                                <svg class="fill-stroke text-black dark:text-white" width="12"
+                                                    height="12" viewBox="0 0 12 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
+                                                        stroke-width="0.75" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"
+                                        class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800"   
+                                        >
+                                            Menu
+                                            <div>
+                                                <svg class="fill-stroke text-black dark:text-white" width="12"
+                                                    height="12" viewBox="0 0 12 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
+                                                        stroke-width="0.75" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="javascript:void(0)"
+                                        class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                            Reviews
+                                            <div>
+                                                <svg class="fill-stroke text-black dark:text-white" width="12"
+                                                    height="12" viewBox="0 0 12 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
+                                                        stroke-width="0.75" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"
+                                            class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                            Reservations
+                                            <div>
+                                                <svg class="fill-stroke text-black dark:text-white" width="12"
+                                                    height="12" viewBox="0 0 12 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
+                                                        stroke-width="0.75" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
                                 
                                 <button aria-label="view favourites"
                                 class=" dark:hover:text-gray-300 text-yellow-300 focus:outline-none focus:ring-2 focus:ring-gray-800 flex gap-4">
@@ -62,7 +161,7 @@
                                     aria-label="the Crib.">
                                     <img src="img/Logo .png" alt="">
                                 </h1>
-                                <ul class="hidden w-8/12 md:flex items-center justify-center space-x-8">
+                                <ul class="hidden w-8/12 lg:flex items-center justify-center space-x-8">
                                     <li>
                                         <a href="javascript:void(0)"
                                             class="font-bold text-base text-white focus:outline-none focus:ring-2 focus:ring-gray-800 hover:overline">Home</a>
@@ -136,7 +235,7 @@
                         </div>
                         <!-- For small screen -->
                         <div id="mobile-menu"
-                            class="hidden absolute dark: z-10 inset-0 md:hidden bg-transparent flex flex-col h-screen w-full">
+                            class="hidden absolute dark: z-10 inset-0 lg:hidden bg-transparent flex flex-col h-screen w-full">
                             <div
                                 class="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-4 p-4">
                                 <div class="flex items-center space-x-3">
