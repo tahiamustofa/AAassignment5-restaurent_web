@@ -10,11 +10,12 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- css -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body>
+<body class="my-0 py-0">
 
-    <header class="mt-0">
+    <header class="mt-0 pt-0">
 
         <!-- component -->
         <section class="bg-center bg-no-repeat bg-[url('./img/05-Restrurent.png')]">
@@ -26,142 +27,155 @@
                     <div class="relative">
                         <!-- For md screen size -->
                         <div id="md-searchbar"
-                            class="bg-transparent hidden lg:hidden py-5 px-6 items-center justify-between relative">
+                            class="bg-transparent block lg:hidden py-5 px-6 items-center justify-between relative">
                             <div class="flex items-center space-x-3 text-gray-800 dark:text-white">
                                 <div>
-                                    <svg class="fill-stroke" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z"
-                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M18.9984 18.9999L14.6484 14.6499" stroke="currentColor"
-                                            stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
+
                                 </div>
-                               
+
+                                <div
+                                    class="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-4 p-4">
+                                    <div class="flex items-center space-x-3">
+                                        <div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <button onclick="closeMenu()" aria-label="close menu"
+                                        class="focus:outline-none focus:ring-2 rounded focus:ring-gray-600 font-bold lg:hidden flex">
+                                        <svg class="fill-stroke font-bold text-white" width="16" height="16"
+                                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 4L4 12" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M4 4L12 12" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+
                             </div>
 
-                            <div class="md-screen space-x-6 absolute top-32 right-0">
-                                 <div class="mt-6 p-4">
-                                <ul class="flex flex-col space-y-6">
-                                    <li>
-                                        <a href="javascript:void(0)"
-                                        class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
-                                            Home
-                                            <div>
-                                                <svg class="fill-stroke text-white" width="12"
-                                                    height="12" viewBox="0 0 12 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
-                                                        stroke-width="0.75" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)"
-                                        class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800"    
-                                        >
-                                            About
-                                            <div>
-                                                <svg class="fill-stroke text-black dark:text-white" width="12"
-                                                    height="12" viewBox="0 0 12 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
-                                                        stroke-width="0.75" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)"
-                                        class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
-                                            Igredients
-                                            <div>
-                                                <svg class="fill-stroke text-black dark:text-white" width="12"
-                                                    height="12" viewBox="0 0 12 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
-                                                        stroke-width="0.75" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)"
-                                        class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800"   
-                                        >
-                                            Menu
-                                            <div>
-                                                <svg class="fill-stroke text-black dark:text-white" width="12"
-                                                    height="12" viewBox="0 0 12 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
-                                                        stroke-width="0.75" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </li>
 
-                                    <li>
-                                        <a href="javascript:void(0)"
-                                        class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
-                                            Reviews
-                                            <div>
-                                                <svg class="fill-stroke text-black dark:text-white" width="12"
-                                                    height="12" viewBox="0 0 12 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
-                                                        stroke-width="0.75" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)"
-                                            class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
-                                            Reservations
-                                            <div>
-                                                <svg class="fill-stroke text-black dark:text-white" width="12"
-                                                    height="12" viewBox="0 0 12 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
-                                                        stroke-width="0.75" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </li>
 
-                                </ul>
-                            </div>
-                                
+                            <div class="md-screen space-x-6 absolute top-36 right-0">
+                                <div class="mt-6 p-4">
+                                    <ul class="flex flex-col space-y-6">
+                                        <li>
+                                            <a href="javascript:void(0)"
+                                                class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                                Home
+                                                <div>
+                                                    <svg class="fill-stroke text-white" width="12" height="12"
+                                                        viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
+                                                            stroke-width="0.75" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)"
+                                                class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                                About
+                                                <div>
+                                                    <svg class="fill-stroke text-black dark:text-white" width="12"
+                                                        height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
+                                                            stroke-width="0.75" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)"
+                                                class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                                Igredients
+                                                <div>
+                                                    <svg class="fill-stroke text-black dark:text-white" width="12"
+                                                        height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
+                                                            stroke-width="0.75" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)"
+                                                class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                                Menu
+                                                <div>
+                                                    <svg class="fill-stroke text-black dark:text-white" width="12"
+                                                        height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
+                                                            stroke-width="0.75" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="javascript:void(0)"
+                                                class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                                Reviews
+                                                <div>
+                                                    <svg class="fill-stroke text-black dark:text-white" width="12"
+                                                        height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
+                                                            stroke-width="0.75" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)"
+                                                class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                                Reservations
+                                                <div>
+                                                    <svg class="fill-stroke text-black dark:text-white" width="12"
+                                                        height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
+                                                            stroke-width="0.75" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
                                 <button aria-label="view favourites"
-                                class=" dark:hover:text-gray-300 text-yellow-300 focus:outline-none focus:ring-2 focus:ring-gray-800 flex gap-4">
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-youtube"></i>
-                            </button>
-                           
+                                    class=" dark:hover:text-gray-300 text-yellow-300 focus:outline-none focus:ring-2 focus:ring-gray-800 flex gap-4">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-youtube"></i>
+                                </button>
+
                             </div>
                         </div>
                         <!-- For md screen size -->
-      
+
 
                         <!-- For large screens -->
-                        <div class="bg-transparent px-6 py-9">
+                        <div class="px-6 py-9">
                             <div class="container flex items-center justify-between  mx-auto">
                                 <h1 class="md:w-2/12 cursor-pointer text-gray-800 dark:text-white"
                                     aria-label="the Crib.">
                                     <img src="img/Logo .png" alt="">
                                 </h1>
-                                <ul class="hidden w-8/12 lg:flex items-center justify-center space-x-8">
+                                <ul class="w-8/12 lg:flex hidden  items-center justify-center space-x-8">
                                     <li>
                                         <a href="javascript:void(0)"
                                             class="font-bold text-base text-white focus:outline-none focus:ring-2 focus:ring-gray-800 hover:overline">Home</a>
@@ -190,8 +204,8 @@
 
                                 <div class="md:w-2/12 justify-end flex items-center space-x-4 xl:space-x-8">
                                     <div class="hidden lg:flex items-center">
-                                       
-                                       
+
+
                                     </div>
                                     <div class="hidden lg:flex items-center space-x-4 xl:space-x-8">
                                         <button aria-label="view favourites"
@@ -200,7 +214,7 @@
                                             <i class="fa-brands fa-twitter"></i>
                                             <i class="fa-brands fa-youtube"></i>
                                         </button>
-                                       
+
                                     </div>
 
                                     <div class="flex lg:hidden">
@@ -240,13 +254,13 @@
                                 class="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-4 p-4">
                                 <div class="flex items-center space-x-3">
                                     <div>
-                                        
+
                                     </div>
-                                  
+
                                 </div>
 
                                 <button onclick="closeMenu()" aria-label="close menu"
-                                    class="focus:outline-none focus:ring-2 rounded focus:ring-gray-600 font-bold">
+                                    class="focus:outline-none focus:ring-2 rounded focus:ring-gray-600 font-bold lg:hidden block">
                                     <svg class="fill-stroke font-bold text-white" width="16" height="16"
                                         viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12 4L4 12" stroke="currentColor" stroke-linecap="round"
@@ -260,12 +274,11 @@
                                 <ul class="flex flex-col space-y-6">
                                     <li>
                                         <a href="javascript:void(0)"
-                                        class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                            class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
                                             Home
                                             <div>
-                                                <svg class="fill-stroke text-white" width="12"
-                                                    height="12" viewBox="0 0 12 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
+                                                <svg class="fill-stroke text-white" width="12" height="12"
+                                                    viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor"
                                                         stroke-width="0.75" stroke-linecap="round"
                                                         stroke-linejoin="round" />
@@ -275,8 +288,7 @@
                                     </li>
                                     <li>
                                         <a href="javascript:void(0)"
-                                        class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800"    
-                                        >
+                                            class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
                                             About
                                             <div>
                                                 <svg class="fill-stroke text-black dark:text-white" width="12"
@@ -291,7 +303,7 @@
                                     </li>
                                     <li>
                                         <a href="javascript:void(0)"
-                                        class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                            class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
                                             Igredients
                                             <div>
                                                 <svg class="fill-stroke text-black dark:text-white" width="12"
@@ -306,8 +318,7 @@
                                     </li>
                                     <li>
                                         <a href="javascript:void(0)"
-                                        class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800"   
-                                        >
+                                            class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
                                             Menu
                                             <div>
                                                 <svg class="fill-stroke text-black dark:text-white" width="12"
@@ -323,7 +334,7 @@
 
                                     <li>
                                         <a href="javascript:void(0)"
-                                        class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                            class="text-white font-bold flex items-center justify-between hover:overline text-base  focus:outline-none focus:ring-2 focus:ring-gray-800">
                                             Reviews
                                             <div>
                                                 <svg class="fill-stroke text-black dark:text-white" width="12"
@@ -355,18 +366,19 @@
                                 </ul>
                             </div>
                             <div class="h-full flex items-end">
-                                <ul class="flex flex-col justify-center space-y-8 bg-gray-50 w-full py-10 p-4 dark:bg-gray-800">
+                                <ul
+                                    class="flex flex-col justify-center space-y-8 bg-gray-50 w-full py-10 p-4 dark:bg-gray-800">
                                     <li>
                                         <a href="javascript:void(0)"
                                             class="dark:text-white text-gray-800 flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                             <div>
                                                 <button aria-label="view favourites"
-                                                class=" dark:hover:text-gray-300 text-yellow-300 focus:outline-none focus:ring-2 focus:ring-gray-800 flex gap-4">
-                                                <i class="fa-brands fa-facebook"></i>
-                                                
-                                            </button>
+                                                    class=" dark:hover:text-gray-300 text-yellow-300 focus:outline-none focus:ring-2 focus:ring-gray-800 flex gap-4">
+                                                    <i class="fa-brands fa-facebook"></i>
+
+                                                </button>
                                             </div>
-                                            
+
                                         </a>
                                     </li>
 
@@ -375,13 +387,13 @@
                                             class="dark:text-white text-gray-800 flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                             <div>
                                                 <button aria-label="view favourites"
-                                                class=" dark:hover:text-gray-300 text-yellow-300 focus:outline-none focus:ring-2 focus:ring-gray-800 flex gap-4">
-                                                
-                                                <i class="fa-brands fa-twitter"></i>
-                                                
-                                            </button>
+                                                    class=" dark:hover:text-gray-300 text-yellow-300 focus:outline-none focus:ring-2 focus:ring-gray-800 flex gap-4">
+
+                                                    <i class="fa-brands fa-twitter"></i>
+
+                                                </button>
                                             </div>
-                                            
+
                                         </a>
                                     </li>
                                     <li>
@@ -389,13 +401,13 @@
                                             class="dark:text-white text-gray-800 flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                             <div>
                                                 <button aria-label="view favourites"
-                                                class=" dark:hover:text-gray-300 text-yellow-300 focus:outline-none focus:ring-2 focus:ring-gray-800 flex gap-4">
-                                                
-                                                <i class="fa-brands fa-youtube"></i>
-                                            </button>
-                                                
+                                                    class=" dark:hover:text-gray-300 text-yellow-300 focus:outline-none focus:ring-2 focus:ring-gray-800 flex gap-4">
+
+                                                    <i class="fa-brands fa-youtube"></i>
+                                                </button>
+
                                             </div>
-                                            
+
                                         </a>
                                     </li>
                                 </ul>
@@ -418,32 +430,55 @@
                     document.getElementById("mobile-menu").classList.add("hidden");
                 };
             </script>
-            <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+            <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:pt-40 lg:pb-72 space-y-4">
                 <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
                     We invest in the world’s potential</h1>
-                <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Here at Flowbite we focus
+                <p class="mb-2 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Here at Flowbite we focus
                     on markets where technology, innovation, and capital can unlock long-term value and drive economic
                     growth.</p>
-                <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 justify-center items-center">
-                   <div>
-                    <a href="">
-                        <button class="py-3 px-10 text-white bg-[#5756557b] hover:bg-[#a198807b]">BOOK A TABLE</button>
-                    </a>
-                   </div>
-                  <div>
-                    <a href="">
-                        <button class="py-3 px-10 text-white bg-[#5756557b] hover:bg-[#a198807b]">SEE THE MENU</button>
-                    </a>
-                  </div>
-                    
+               <div class="flex justify-center pt-0 pb-4">
+                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232 43" width="232" height="43">
+                    <title>05-Restrurent</title>
+                    <defs>
+                        <image  width="232" height="43" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOgAAAArCAMAAABFCzRQAAAAAXNSR0IB2cksfwAAAZhQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////vZv0rwAAAIh0Uk5TAAmZ95QGkpgKvv/j4rLluA/JubMDry1jK/FkpetpN/1e+k5CP/Yc3GiIztL+WwGXfhtieGHWAhMV0Fzh0wxG5CTGRfCJhnkqzQ0gITAyQE1QWWBmcMyRJ4SAeqPKy8Le4O4eUxG01A4QGfw4wzm7qezPT99Rpgus566rp47dUqqN7YpIhTsd9c/RirQAAAX1SURBVHicvdp7bFNVGADw73S9W2GwB+sYMu8eHZtrdCBdwAG6QIKAQXxAohgfTEQnMaJRCSYa/xCNEiKJ8AfyCIwE44jBJySARAgKDMyKCNq5sbHtCjK2bmNjod1te/zOo2M6xlqTe0665bb35n73d8893/16bgkobYQQYK8w2ElAbWSl0RwIJZEECNvDlFKlUqVQbbRJqYMEIYkGCHH0mgpjq4RqDuzHgJZyA0b1mNi5CQGFUoVQ6XSEkyCIRsVSddCbTgpEvVQZdJCzG9LUS1VBhdNJ+tA5nrShNJl2qJSqgk4g19IuO5O6mDOxM8NAaXqwY2J3Kr2i5gCUXbo5ZiIxhVNrjwipRvu1VkXxrYa6SKNcmkQugXASOzG4FLLpBbm2gDZZeyAWQ13UHpFSZyQAOXXgbslrCrhb8uvN4lZw2DrEygJbiFgrtRbqoslN2UKK4zO/vz/l3GTSQO+q10efKelJTLyI45StLLBdcvVZK7UU6qJtxcTHpTwPZdiEFHRaj86In2ck7nSTP7IslVoJRWeGod37e37yaZFvUcSlAeFsBJF7p/ddvPtXU/dbKrUQyp0oxO7jTjvvOyYddUo4wRni0iJi4H9rpdZB/+ssJtfPSSlIZ8kYWqdKGht0Zkd9vDuOOqe2S6fdm5kipSCdPe2ekJRmnvm/0iLniVg2uw30gZ+iS7ofuyW+8OUGOif7u6aRo1Hnfc0RKQXptOWdikpn01/SM35Daf6P8QUqYvfkoYc8pA0PLbP7fWJJ9884GacU8yg6ScMgZ0JAp1w69wTMPMydxHCEB0kLKUqzo/fd2Bo6Z5yMSt0ZoZrhNhwWmjaxGWb9wJZKaAbp9cUndTETEqeRTn/UacK8nzOLD+L4BByn8+va7z/Ean0hzR6NXRrsYPp4Ll50usdSPznH3jx4HMpruofZkjzEpnHEjBUB/sfbhcL9D1/2umvZmc+bQJpNn+6JOTz5KjAgvfPrxfukM8e85q5leQhYRir1pWKhK6SL9j7+14DTsZjGHMlruLU8eqWZXSmlPs/EfQsbJslVlPI//sJGnmsoIqT15NB95PrK7ChdfqTtqQNdnpDpizk6CzAgBU/onjrv01WDnI0i90ppxeee4vOTd8OAk8RzJ3Brdm/6gi+y5uxAZ6jG3TJ0kxk5lNYX3txpJfYp20zGOX2VDVMvO7SFVbrhCaVqsYXONeBIWEoJr4I6k/BE1UinTT8GLFdFpBRjpAfHEQMKKZXOhDmg3+KAb9XMa3avblTsZzvzsAE6fjr/nHUn5GJnboluefuzx6QtS3e45hwyHqmOLTRr4ls2Sh/d7indJqR/L9rKnTgES650m7zDS30vfX+HcL5Y613xrXTG81186Xf6vCNNy6tzhXP4NsJlgtLKLUuOjW2S1XeMTUjf+AxWHr/ASgaU4lVW+9aX3NnTjhaULtlQiuOBO9ODk2Zthpc3xD3ngIPD1Vu+t3LLCM4RC4YylkeKe57YGY9TSF892ABYIzhf2KTTopyqVUevUuDOvJmfcimQ8bM3VrTWE+P1rTg+26Fw/qa451aclbtT6lhGu71z5MqobO46Ewpa453ZQemqjZ6AHy9QXHxzZ+eUs3q/dJLzSV1CmmhMOTvu+U/wDV7UGQ7vqo3xzyFpOY2grTk8gtO6WpffN2re2wVTv9FWbof+NNKXJZ1HwfnKei5tS6bdibBis/nYGVj2fpm4C1nTrCvqtXcO1Ij653piJ+bei6uro05+Gl7b1uFauj4f8+24/jGiZipb8KFlc4KWT46htGLd2+vDvLKKOrmU5TesbBJWf7ymijstbdbPAmKWyfWhC6XTk0+Fg/LjtR+llu9hzoDpbsm03KliurPkyXd5D6I0jQRzRYVVYLuutQonwAd7LHcqfSQxSPovp5Km9CHTgLTABkG1TsWPDaX0mSqINKp1qn4QLKRZduVOxY/2pdSp3qn4xxpS+uwm5U7FUNBSbrDKAZ3sq7jKphjKfoCjL4NdhuIf36iHMmn28rXKneqh4Aitheo/VTvhHwwRbACAIzqjAAAAAElFTkSuQmCC"/>
+                    </defs>
+                    <style>
+                        tspan { white-space:pre } 
+                    </style>
+                    <g id="Content">
+                        <g id="Section - Promo">
+                            <g id="Section Content">
+                                <g id="Divider">
+                                    <use id="Decoration" href="#img1" x="0" y="0"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+               </div> 
+                <div
+                    class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 justify-center items-center">
+                    <div>
+                        <a href="">
+                            <button class="py-3 px-10 text-white bg-[#5756557b] hover:bg-[#a198807b]">BOOK A
+                                TABLE</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <button class="py-3 px-10 text-white bg-[#5756557b] hover:bg-[#a198807b]">SEE THE
+                                MENU</button>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </section>
     </header>
 
     <main>
-    
-          
+
+
     </main>
 
 </body>
