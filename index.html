@@ -14,20 +14,26 @@
 </head>
 
 <body class="my-0 py-0">
+    <!-- spinner -->
+    
+    <div class="preLoader">
+        <span class="loader"></span>
+    </div>
 
+<!-- header -->
     <header class="mt-0 pt-0">
 
         <!-- component -->
         <section class="bg-center bg-cover bg-no-repeat bg-[url('./img/05-Restrurent.png')]">
             <!-- component -->
-            <div class="bg-transparent">
+            <div class="nav bg-transparent">
                 <!--- more free and premium Tailwind CSS components at https://tailwinduikit.com/ --->
 
                 <div>
                     <div class="relative">
                         <!-- For md screen size -->
                         <div id="md-searchbar"
-                            class="bg-transparent block lg:hidden py-5 px-6 items-center justify-between relative">
+                            class="bg-transparent block lg:hidden py-4 px-6 items-center justify-between relative">
                             <div class="flex items-center space-x-3 text-gray-800 dark:text-white">
                                 <div>
 
@@ -169,11 +175,16 @@
 
 
                         <!-- For large screens -->
-                        <div class="px-6 py-9">
+                        <div class="px-6 py-3">
                             <div class="container flex items-center justify-between  mx-auto">
                                 <h1 class="md:w-2/12 cursor-pointer text-gray-800 dark:text-white"
                                     aria-label="the Crib.">
-                                    <img src="img/Logo .png" alt="">
+                                    <div class="wLogo">
+                                        <img src="img/Logo .png" alt="">
+                                    </div>
+                                    <div class="bLogo hidden">
+                                        <img src="img/01-TINYONE.png" alt="">
+                                    </div>
                                 </h1>
                                 <ul class="w-8/12 lg:flex hidden  items-center justify-center space-x-8">
                                     <li>
@@ -1009,7 +1020,8 @@
 
     </main>
 
-
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
